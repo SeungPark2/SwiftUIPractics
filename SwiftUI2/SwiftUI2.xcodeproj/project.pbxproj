@@ -47,6 +47,7 @@
 		016B1CAC23631F5A009C288C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B1CAB23631F59009C288C /* Data.swift */; };
 		016B1CAE23631FAC009C288C /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 016B1CAD23631FAC009C288C /* hikeData.json */; };
 		016B1CB0236322B4009C288C /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016B1CAF236322B4009C288C /* CategoryHome.swift */; };
+		01971B1A23670AC6001E7627 /* CategroyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01971B1923670AC6001E7627 /* CategroyRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		016B1CAB23631F59009C288C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		016B1CAD23631FAC009C288C /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = hikeData.json; path = ../../../AnimatingViewsAndTransitions/StartingPoint/Landmarks/Landmarks/Resources/hikeData.json; sourceTree = "<group>"; };
 		016B1CAF236322B4009C288C /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
+		01971B1923670AC6001E7627 /* CategroyRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategroyRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				016B1CA12361DB80009C288C /* Model */,
 				016B1CAA23631EAB009C288C /* Past */,
 				016B1CAF236322B4009C288C /* CategoryHome.swift */,
+				01971B1923670AC6001E7627 /* CategroyRow.swift */,
 				016B1C23235F11EA009C288C /* Assets.xcassets */,
 				016B1C28235F11EA009C288C /* LaunchScreen.storyboard */,
 				016B1C2B235F11EA009C288C /* Info.plist */,
@@ -411,6 +414,7 @@
 				016B1C9E2361DA1D009C288C /* HikeView.swift in Sources */,
 				016B1C50235F13EC009C288C /* MapView.swift in Sources */,
 				016B1C74235F1AC0009C288C /* LandmarkList.swift in Sources */,
+				01971B1A23670AC6001E7627 /* CategroyRow.swift in Sources */,
 				016B1C9A23607804009C288C /* BadgeSymbol.swift in Sources */,
 				016B1C9C236079BA009C288C /* RotatedBadgeSymbol.swift in Sources */,
 				016B1CAC23631F5A009C288C /* Data.swift in Sources */,

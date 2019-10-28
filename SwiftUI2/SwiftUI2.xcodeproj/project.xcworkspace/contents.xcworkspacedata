@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/pst/Desktop/Practics/SwiftUI2/SwiftUI2/LandmarkRow.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/pst/Desktop/Practics/SwiftUI2/SwiftUI2/Data.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/pst/Desktop/Practics/SwiftUI2/SwiftUI2/Landmark.swift">
-   </FileRef>
-   <FileRef
       location = "self:SwiftUI2.xcodeproj">
    </FileRef>
 </Workspace>
