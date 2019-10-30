@@ -11,13 +11,13 @@ import SwiftUI
 struct ProfileSummary: View {
     var profile: Profile
     
-    static let goalFormat: DataFormatter = {
-        let formatter = DataFormatter()
-        formatter.dataStyle = .long
+    static let goalFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .long
         formatter.timeStyle = .none
         return formatter
     }()
-    
+
     var body: some View {
         List {
             Text(profile.username)
@@ -29,6 +29,31 @@ struct ProfileSummary: View {
             Text("Seasonal photos: \(self.profile.seasonalPhoto.rawValue)")
             
             Text("Goal Data: \(self.profile.goalDate, formatter: Self.goalFormat)")
+            
+            VStack(alignment: .leading) {
+                Text("Completed Badges")
+                    .font(.headline)
+                ScrollView {
+                    HStack {
+                        HikeBadge(name: "First Hike")
+                        
+                        HikeBadge(name: "Earth Day")
+                        .hueRotation(Angle(degrees: 90))
+                        
+                        HikeBadge(name: "Tenth Hike")
+                            .grayscale(0.5)
+                        .hueRotation(Angle(degrees: 45))
+                    }
+                }
+                .frame(height: 140)
+            }
+            
+            VStack(alignment: .leading) {
+                Text("Recent Hikes")
+                    .font(.headline)
+                
+                HikeView(hike: hikeData[0])
+            }
         }
     }
 }
