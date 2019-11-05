@@ -1,10 +1,9 @@
-//
-//  ProfileHost.swift
-//  SwiftUI2
-//
-//  Created by PST on 2019/10/30.
-//  Copyright © 2019 PST. All rights reserved.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view that hosts the profile viewer and editor.
+*/
 
 import SwiftUI
 
@@ -27,7 +26,6 @@ struct ProfileHost: View {
                 
                 EditButton()
             }
-            
             if self.mode?.wrappedValue == .inactive {
                 ProfileSummary(profile: userData.profile)
             } else {
@@ -36,7 +34,7 @@ struct ProfileHost: View {
                         self.draftProfile = self.userData.profile
                     }
                     .onDisappear {
-                    self.userData.profile = self.draftProfile
+                        self.userData.profile = self.draftProfile
                     }
             }
         }
